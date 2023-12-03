@@ -1,0 +1,81 @@
+﻿body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.MainContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.go {
+    padding: 14px 5px 14px 5px;
+    background-color: green;
+    font-size: 17px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    .go:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+    }
+
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.Exchange_Currencies {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    row-gap: 25%;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    outline: none;
+    width: 50%;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.result {
+    font-size: 22px;
+}
+
+#submit-btn {
+    padding: 14px 5px 14px 5px;
+    background-color: green;
+    font-size: 17px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    #submit-btn:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+    }

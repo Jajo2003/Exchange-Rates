@@ -11,4 +11,8 @@
 	  
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\styles.css" />
+  </ItemGroup>
+
 </Project>

@@ -2,40 +2,7 @@
 	ViewData["title"] = "Exchange";
 }
 <style>
-	.Wrapper{
-        display:flex;
-        flex-direction:column;
-        width:50%;
-        height:40vh;
-        align-items:center;
-        justify-content:center;
-        background-color:azure;
-    }
-
-    .Container{
-        display:flex;
-        justify-content:space-evenly;
-        width:50%;
-    }
-
-    .Exchange_Currencies{
-        width:50%;
-        height:50%;
-        display:flex;
-        row-gap:25%;
-        flex-direction:column;
-        align-items:center;
-    }
-    input{
-        outline:none;
-        width:50%;
-        padding:5px;
-        font-size:18px;
-    }
-
-    .result{
-        font-size:22px;
-    }
+	
 </style>
 <div class="Wrapper">
     @if (ViewBag.UsdBuy != null && ViewBag.UsdSell != null && ViewBag.EuroBuy !=null &&  ViewBag.EuroSell != null)
@@ -45,24 +12,37 @@
                 <div class="Name">Curr</div>
                 <div class="CurrencyBuy">Buy</div>
                 <div class="CurrencySell">Sell</div>
-
+                <div></div>
 
             </div>
             <div class="Container">
                 <div class="Name">USD</div>
                 <div class="CurrencyBuy">@ViewBag.UsdBuy</div>
                 <div class="CurrencySell">@ViewBag.UsdSell</div>
+                <div>
+                    <input type="checkbox" id="UsdBox">
+                </div>
             </div>
             <div class="Container">
                 <div class="Name">EUR</div>
                 <div class="CurrencyBuy">@ViewBag.EuroBuy</div>
                 <div class="CurrencySell">@ViewBag.EuroSell</div>
+                <div>
+                    <input type="checkbox" id="EuroBox">
+                </div>
             </div>
+            <div class="Container"  >
+            <button id="submit-btn">Convert</button>
+                
+             </div>
+            <input type="text" placeholder="100" id="Amount">
 
+           
 
-            <input type="text" placeholder="100">
-            <p class="result"></p>
+            <p id="result"></p>
+           
             </div>
+           
     }
     else
     {
@@ -70,6 +50,5 @@
     }
 
 </div>
-
 
 

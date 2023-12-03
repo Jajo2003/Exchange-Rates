@@ -20,11 +20,15 @@ namespace Valuta.Controllers
 
             JsonElement eurRateBuy = doc.RootElement.GetProperty("commercialRatesList")[0].GetProperty("buy");
             JsonElement eurRateSell = doc.RootElement.GetProperty("commercialRatesList")[0].GetProperty("sell");
+
             ViewBag.EuroBuy = eurRateBuy.GetDecimal();
             ViewBag.EuroSell = eurRateSell.GetDecimal();
 
             JsonElement usdRateBuy = doc.RootElement.GetProperty("commercialRatesList")[1].GetProperty("buy");
             JsonElement usdRateSell = doc.RootElement.GetProperty("commercialRatesList")[1].GetProperty("sell");
+
+            
+
             ViewBag.UsdBuy = usdRateBuy.GetDecimal();
             ViewBag.UsdSell = usdRateSell.GetDecimal();
 
